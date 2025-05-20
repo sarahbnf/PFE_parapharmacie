@@ -1,147 +1,121 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--titre-->
   <title>L'Essence Santé - Accueil</title>
-   <!--logo-->
-   <link rel="icon" type="image/png" href="logo_rond.png">
+  <!--logo-->
+  <link rel="icon" type="image/png" href="logo_rond.png">
   <!--link icon-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
-  integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
-  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!--link css-->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Open+Sans&display=swap" rel="stylesheet">
- <link rel="stylesheet" href="acceuil.css">
- <link rel="stylesheet" href="header.css">
- <link rel="stylesheet" href="footer.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Open+Sans&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="acceuil.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="footer.css">
 </head>
 
 
 <body>
   <section class="mainSection">
     <!--navigation bar-->
-  <header>
-    <h1> <i class="fa-solid fa-leaf" style=" color: #000; "></i> L'Essence Santé</h1>
-    <nav>
-      <a class="lien" href="#">Accueil</a>
-      <div class="dropdown">
-        <a class="lien dropdown-toggle" href="#">
-          Produits <i class="fa-solid fa-caret-down"></i>
-        </a>
-        <!--dropdown menu-->
-        <div class="dropdown-content">
-          <a href="#">Soins du visage</a>
-          <a href="#">Compléments alimentaires</a>
-          <a href="#">Hygiène</a>
-          <a href="#">Bébé & Maternité</a>
-          <a href="#">Soins du corps</a>
-          <a href="#">Soins capillaires</a>
-          <a href="#">Minceur & Nutrition</a>
-          <a href="#">Santé & Bien-être</a>
-          <a href="#">Solaires & Après-soleil</a>
-          
+    <header>
+      <a href="index.html" style="text-decoration: none;">
+        <h1> <i class="fa-solid fa-leaf" style=" color: #000; "></i> L'Essence Santé</h1>
+      </a>
+      <nav>
+        <a class="lien" href="index.html">Accueil</a>
+        <div class="dropdown">
+          <a class="lien dropdown-toggle" href="produits.html">
+            Produits <i class="fa-solid fa-caret-down"></i>
+          </a>
+          <!--dropdown menu-->
+          <div class="dropdown-content">
+            <a href="SH.html">Soins & Hygiène</a>
+            <a href="SC.html">Soins capillaires</a>
+            <a href="SB.html">Santé & Bien-être</a>
+            <a href="BM.html">Bébé & Maternité</a>
+            <a href="MP.html">Matériel médical & Premiers soins</a>
+
+          </div>
         </div>
+
+        <!------ -->
+        <a class="lien" href="contact.html">Contact</a>
+        <button class="btncnx"><a href="connexion.html">Seconnecter</a></button>
+        <button class="btninsc"><a href="inscription.html">S'inscrire</a></button>
+        <a href="panier.html"> <i class="fa-solid fa-cart-shopping"
+            style="color: #558161; font-size: 30px;"></i><span id="cart-count"
+            style="color: #558161; text-decoration: none;">(0)</span></a>
+
+      </nav>
+    </header>
+    <!--description-->
+    <section class="hero">
+
+      <div class="hero-content">
+        <h2>Votre bien-être commence ici !</h2>
+        <p>Des soins naturels et sélectionnés pour votre équilibre et votre santé</p>
+        <button><a href="produits.html">Découvrir </a></button>
+
       </div>
-      
-      <!------ -->
-      <a class="lien" href="#">Contact</a>
-      <button  class="btncnx"><a href="connexion.html">Seconnecter</a></button>
-      <button class="btninsc"><a href="inscription.html">S'inscrire</a></button>
-     <a href="#"> <i class="fa-solid fa-cart-shopping" style="color: #558161; font-size: 30px;"></i> </a>
-      
-    </nav>
-  </header>
-<!--description-->
-  <section class="hero">
-    
-     <div class="hero-content">
-      <h2>Votre bien-être commence ici !</h2>
-      <p>Des soins naturels et sélectionnés pour votre équilibre et votre santé</p>
-      <button><a href="#">Découvrir </a></button>
-      
-     </div>
-     <div class="heroimg">
-      <img  src="pexels-alesiakozik-7795818.jpg" alt="">
+      <div class="heroimg">
+        <img src="pexels-alesiakozik-7795818.jpg" alt="">
+      </div>
+
+      <!--categories-->
+    </section>
+    <div class="prd">
+      <p>Nos produits</p>
     </div>
 
-    <!--categories-->
-  </section>
-  <div class="prd">
-    <p>Nos produits</p>
-  </div>
-
-  <div class="categories-wrapper">
-    <button class="scroll-btn left"><i class="fa-solid fa-chevron-left"></i></button>
-  <section class="categories">
-    <!--ctg1-->
-    <div class="category">
-      <img class="ctgimg" src="soin visage 3.jpg" alt="">
-      <h3>Soins du Visage</h3>
-      <p>Hydratation, éclat, protection & anti-âge</p>
-      <button >Découvrir</button>
-    </div>
-     <!--ctg2-->
-    <div class="category">
-      <img class="ctgimg" src="complement almtr3.jpg" alt="">
-      <h3>Compléments Alimentaires</h3>
-      <p>Renforcez votre santé naturellement</p>
-      <button>Découvrir</button>
-    </div>
-     <!--ctg3-->
-    <div class="category">
-      <img class="ctgimg" src="hygiene2.jpg" alt="">
-      <h3>Hygiène</h3>
-      <p>Des produits doux pour votre corps</p>
-      <button>Découvrir</button>
-    </div>
-     <!--ctg4-->
-    <div class="category">
-      <img class="ctgimg" src="bebe maman 2.jpg" alt="">
-      <h3>Bébé & Maternité</h3>
-      <p>Soins sûrs et délicats pour les petits</p>
-      <button>Découvrir</button>
-    </div>
-     <!--ctg5-->
-    <div class="category">
-      <img class="ctgimg" src="soin du corps1.jpg" alt="">
-      <h3>Soins du corps</h3>
-      <p>Chouchoutez votre peau avec douceur et efficacité</p>
-      <button>Découvrir</button>
-    </div>
-     <!--ctg6-->
-    <div class="category">
-      <img class="ctgimg" src="soins capilaire2.jpg" alt="">
-      <h3>Soins capillaires</h3>
-      <p>Revitalisez vos cheveux grâce à des soins ciblés</p>
-      <button>Découvrir</button>
-    </div>
-     <!--ctg7-->
-    <div class="category">
-      <img class="ctgimg" src="minceur et nutrition.jpg" alt="">
-      <h3>Produits Minceur et Nutrition</h3>
-      <p>Atteignez vos objectifs bien-être naturellement</p>
-      <button>Découvrir</button>
-    </div>
-     <!--ctg8-->
-    <div class="category">
-      <img class="ctgimg" src="santé bien etre2.jpg" alt="">
-      <h3>Santé et Bien-être</h3>
-      <p>L’équilibre au quotidien avec des produits naturels</p>
-      <button>Découvrir</button>
-    </div>
-     <!--ctg9-->
-    <div class="category">
-      <img class="ctgimg" src="solaire4.jpg" alt="">
-      <h3>Solaires et Après-soleil</h3>
-      <p>Protégez votre peau des rayons du soleil, naturellement</p>
-      <button>Découvrir</button>
+    <div class="categories-wrapper">
+      <button class="scroll-btn left"><i class="fa-solid fa-chevron-left"></i></button>
+      <section class="categories">
+        <!--ctg1-->
+        <div class="category">
+          <img class="ctgimg" src="soin visage 3.jpg" alt="">
+          <h3>Soins & Hygiène</h3>
+          <p>Hydratation, éclat, protection <br> & anti-âge</p>
+          <a href="SH.html"> <button>Découvrir</button> </a>
+        </div>
+        <!--ctg2-->
+        <div class="category">
+          <img class="ctgimg" src="complement almtr3.jpg" alt="">
+          <h3>Soins capillaires</h3>
+          <p>Renforcez votre santé naturellement</p>
+          <a href="SC.html"> <button>Découvrir</button> </a>
+        </div>
+        <!--ctg3-->
+        <div class="category">
+          <img class="ctgimg" src="hygiene2.jpg" alt="">
+          <h3>Santé & Bien-être</h3>
+          <p>Des produits doux pour votre corps</p>
+          <a href="SB.html"> <button>Découvrir</button> </a>
+        </div>
+        <!--ctg4-->
+        <div class="category">
+          <img class="ctgimg" src="bebe maman 2.jpg" alt="">
+          <h3>Bébé & Maternité</h3>
+          <p>Soins sûrs et délicats pour les petits</p>
+          <a href="BM.html"> <button>Découvrir</button> </a>
+        </div>
+        <!--ctg5-->
+        <div class="category">
+          <img class="ctgimg" src="soin du corps1.jpg" alt="">
+          <h3>Matériel médical & Premiers soins</h3>
+          <p>Chouchoutez votre peau avec <br> douceur et efficacité</p>
+          <a href="MP.html"> <button>Découvrir</button> </a>
+        </div>
+      </section>
+      <button class="scroll-btn right"><i class="fa-solid fa-chevron-right"></i></button>
     </div>
   </section>
-  <button class="scroll-btn right"><i class="fa-solid fa-chevron-right"></i></button>
-</div>
-</section>
   <!--footer-->
   <footer class="footer">
     <div class="footer-content">
@@ -149,7 +123,7 @@
         <h3>L'Essence Santé</h3>
         <p>Parapharmacie naturelle et élégante, pour votre bien-être au quotidien.</p>
       </div>
-  
+
       <div class="footer-section links">
         <h4>Liens utiles</h4>
         <ul>
@@ -159,20 +133,27 @@
           <li><a href="#">Contact</a></li>
         </ul>
       </div>
-  
+
       <div class="footer-section contact">
         <h4>Contact</h4>
         <p><i class="fa-solid fa-phone"></i> +33 1 23 45 67 89</p>
         <p><i class="fa-solid fa-envelope"></i> contact@essencesante.fr</p>
+        <h2>Liens vers les réseaux sociaux</h2>
+        <div class="socials">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
       </div>
     </div>
-  
+
     <div class="footer-bottom">
       &copy; 2025 L'Essence Santé — Tous droits réservés
     </div>
   </footer>
-  
-<!--js link-->
+
+  <!--js link-->
   <script src="script.js"></script>
 </body>
+
 </html>

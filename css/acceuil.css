@@ -69,6 +69,11 @@ body {
     margin-top: 60px;
     margin-left: 260px;
   }
+  .hero-content button:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background-color:#3f6349
+  }
 
   .hero-content button a {
     color: #f7ffff;
@@ -260,4 +265,21 @@ body {
     margin-left: 0;
     text-align: center;
   }
+}
+.header-icons {
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+.header-icons span {
+  background-color: #e91e63;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  margin-left: 5px;
 }

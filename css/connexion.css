@@ -86,6 +86,10 @@ body {
   text-align: right;
   margin-bottom: 20px;
 }
+.forgot:hover{
+  text-decoration: underline;
+  color: #7fbf7f;
+}
 
 .forgot a {
   font-size: 12px;
