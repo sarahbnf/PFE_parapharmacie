@@ -20,33 +20,30 @@
 <body class="fade-in">
   <div class="signup-container">
     <div class="signup-left">
-      <img src="cnxins1.jpg" alt="Inscription" class="bg-image" />
+      <img src="connexion (2).jfif" alt="Inscription" class="bg-image" />
     </div>
 
     <div class="signup-right">
       <h2>Créer un compte</h2>
-      <form>
+      <form action="inscription.php" method="post">
         <div class="input-group">
           <label for="name">Nom complet</label>
-          <input type="text" id="name" placeholder="Votre nom complet" required>
+          <input type="text" id="name" placeholder="Votre nom complet" name="name" required>
         </div>
         <div class="input-group">
           <label for="email">Adresse email</label>
-          <input type="email" id="email" placeholder="example@mail.com" required>
+          <input type="email" id="email" placeholder="example@mail.com" name="email" required>
         </div>
         <div class="input-group">
           <label for="address">Adresse</label>
-          <input type="text" id="address" placeholder="Rue, ville, code postal" required>
+          <input type="text" id="address" placeholder="Rue, ville, code postal" name="Adresse" required>
         </div>
 
         <div class="input-group">
           <label for="password">Mot de passe</label>
-          <input type="password" id="password" placeholder="Mot de passe" required>
+          <input type="password" id="password" placeholder="Mot de passe" name="password" required>
         </div>
-        <div class="input-group">
-          <label for="confirm-password">Confirmer le mot de passe</label>
-          <input type="password" id="confirm-password" placeholder="Confirmer le mot de passe" required>
-        </div>
+        
 
         <button type="submit" class="signup-btn">S'inscrire</button>
 

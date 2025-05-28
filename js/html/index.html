@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS</title>
+    <!--icone link-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--logo link-->
+    <link
+      class="logoimg"
+      href="/images/JavaScript-logo.png"
+      type="image/x-icon"
+      rel="icon"
+    />
+    <!--css links-->
+    <link rel="stylesheet" href="/CSS/navigationScript.css" />
+    <link rel="stylesheet" href="/CSS/homescript.css" />
+    <link rel="stylesheet" href="/CSS/aboutScript.css" />
+    <link rel="stylesheet" href="/CSS/servicescript.css">
+    <link rel="stylesheet" href="/CSS/contactscript.css">
+  </head>
+  <body>
+    <!--nav begin-->
+    <nav id="home" class="navg">
+      <div class="logo">JS</div>
+      <div class="navItems">
+        <a href="#home">Home</a>
+        <a href="#serv">Services</a>
+        <a href="#contact">Contact Us</a>
+        <a href="#abt">About Us</a>
+      </div>
+      <div id="search" class="search" onclick="search()">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+    </nav>
+    <!--nav end-->
+    <!--slide show begin-->
+    <div  class="parentaccueil">
+      <img
+        id="img"
+        class="imgaccueil"
+        src="/images/caspar-camille-rubin-fPkvU7RDmCo-unsplash.jpg"
+        alt=""
+      />
+      <button onclick="slidshowpre()" class="pre"><</button>
+      <div class="parentcontent">
+        <div class="content">
+          <div id="basic" class="basic">Basic Templates</div>
+          <div id="par" class="par">
+            JavaScript est un langage de programmation de scripts principalement
+            employé dans les pages web interactives et à ce titre est une partie
+            essentielle des applications web. Avec les langages HTML et CSS,
+            JavaScript est au cœur des langages utilisés par les développeurs
+            web.
+          </div>
+          <button class="readbtn">Read More</button>
+        </div>
+      </div>
+      <button onclick="slidshownext()" class="next">></button>
+    </div>
+    <!--slide show end-->
+
+    <!--about begin-->
+    <div id="abt" class="abtparent">
+      <div class="titleabt">About Informations</div>
+      <div class="parabt">
+        JavaScript est un langage de programmation de scripts principalement
+        employé dans les pages web interactives et à ce titre est une partie
+        essentielle des applications web. Avec les langages HTML et CSS,
+        JavaScript est au cœur des langages utilisés par les développeurs web.
+      </div>
+      <div class="imgabt">
+        <img
+          class="imabt"
+          src="/images/greg-rakozy-vw3Ahg4x1tY-unsplash.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <button class="readabt">Read More</button>
+      </div>
+    </div>
+    <!--about end-->
+
+    <!--services begin-->
+    <div id="serv" class="services">
+      <div class="titleser">Services</div>
+      <div class="parser">Les services JavaScript (services JS) sur webOS permettent aux applications de fonctionner, 
+        même lorsqu'elles ne sont pas en cours d'exécution . Ils donnent également accès à des fonctionnalités de
+         plate-forme qui ne sont généralement pas disponibles pour les applications Web. Le service JS sur webOS 
+         TV présente les caractéristiques suivantes : Il est écrit en JavaScript et créé à l'aide de Node.</div>
+      <div class="grid">
+        <div class="griditems">
+          <img class="imgser" src="/images/jse.jpg" alt="">
+          <div class="titleitems">title 1</div>
+        </div>
+        <div class="griditems">
+          <img class="imgser" src="/images/jse1.jpg" alt="">
+          <div class="titleitems">title 2</div>
+        </div>
+        <div class="griditems">
+          <img class="imgser" src="/images/js2.jpg" alt="">
+          <div class="titleitems">title 3</div>
+        </div>
+        <div class="griditems">
+          <img class="imgser" src="/images/jse3.jpg" alt="">
+          <div class="titleitems">title 4</div>
+        </div>
+        <div class="griditems">
+          <img class="imgser" src="/images/jse4.jpg" alt="">
+          <div class="titleitems">title 5</div>
+        </div>
+        <div class="griditems">
+          <img class="imgser" src="/images/jse5.jpg" alt="">
+          <div class="titleitems">title 6</div>
+        </div>
+      </div>
+    </div>
+    <!--services end-->
+
+    <!--formulaire begin-->
+    <div id="contact" class="contact">
+      <form class="form" method="post" onsubmit="return validatform()">
+        <div class="contacttitle">Contact Us</div>
+        <div >
+         
+          <input id="inptname" class="input" type="text" placeholder="Name">
+        </div>
+        <div id="errname"></div>
+        <div >
+          <div class="inform">your e-mail</div>
+          <input id="inptemail" class="input" type="email" placeholder="e-mail">
+        </div>
+        <div id="erremail"></div>
+        <div >
+          <div class="inform">your password</div>
+          <input id="inptpw" class="input" type="password" placeholder="password">
+        </div>
+        <div id="errpw"></div>
+        <div>
+          <div class="inform">your message</div>
+          <textarea class="txtarea" placeholder="enter your message" cols="30" rows="10"></textarea>
+        </div>
+        <div class="submitbtn">
+          <input class="btnsub" type="submit" value="send">
+        </div>
+      </form>
+    
+    <!--formulaire end-->
+    <a href="#home" class="fleche"><i class="fa-solid fa-arrow-up"></i></a>
+
+   
+         
+
+
+    <script src="/javascript/Script.js"></script>
+  </body>
+</html>

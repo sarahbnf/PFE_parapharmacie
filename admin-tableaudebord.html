@@ -1,0 +1,130 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Tableau de Bord Admin</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #355E3B;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        aside {
+            width: 250px;
+            background-color: #2f4f4f;
+            color: white;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        aside h2 {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        aside a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #3b6b5e;
+            border-radius: 5px;
+        }
+
+        aside a:hover {
+            background-color: #467f6f;
+        }
+
+        main {
+            flex: 1;
+            padding: 30px;
+        }
+
+        main h1 {
+            margin-bottom: 20px;
+        }
+
+        .dashboard-info {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            flex: 1;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            min-width: 200px;
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+
+        .logout-btn {
+            margin-top: 20px;
+            background-color: #c0392b;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .logout-btn:hover {
+            background-color: #a93226;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tableau de bord Administrateur</h1>
+    </header>
+    <div class="container">
+        <aside>
+            <h2>Navigation</h2>
+            <a href="admin-dashboard.html">Accueil</a>
+            <a href="admin-produits.html">Gérer les produits</a>
+            <a href="admin_commandes.html">Voir les commandes</a>
+            <a href="admin_utilisateurs.html">Voir les utilisateurs</a>
+            <form action="deconnexionadmin.php" method="post">
+                <button type="submit" class="logout-btn">Déconnexion</button>
+            </form>
+        </aside>
+        <main>
+            <h1>Bienvenue, Admin</h1>
+            <div class="dashboard-info">
+                <div class="card">
+                    <h3>Produits</h3>
+                    <p>Ajouter, modifier ou supprimer les produits de la boutique.</p>
+                </div>
+                <div class="card">
+                    <h3>Commandes</h3>
+                    <p>Consulter les commandes des utilisateurs.</p>
+                </div>
+                <div class="card">
+                    <h3>Utilisateurs</h3>
+                    <p>Voir les utilisateurs inscrits.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

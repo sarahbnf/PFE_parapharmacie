@@ -22,33 +22,34 @@
 
 <body>
     <header>
-        <a href="index.html" style="text-decoration: none;">
+        <a href="index.php" style="text-decoration: none;">
             <h1> <i class="fa-solid fa-leaf" style=" color: #000; "></i> L'Essence Santé</h1>
         </a>
         <nav>
-            <a class="lien" href="index.html">Accueil</a>
+            <a class="lien" href="index.php">Accueil</a>
             <div class="dropdown">
-                <a class="lien dropdown-toggle" href="Produits.html">
+                <a class="lien dropdown-toggle" href="Produits.php">
                     Produits <i class="fa-solid fa-caret-down"></i>
                 </a>
                 <!--dropdown menu-->
                 <div class="dropdown-content">
-                    <a href="SH.html">Soins & Hygiène</a>
-                    <a href="SC.html">Soins capillaires</a>
-                    <a href="SB.html">Santé & Bien-être</a>
-                    <a href="BM.html">Bébé & Maternité</a>
-                    <a href="MP.html">Matériel médical & Premiers soins</a>
+                    <a href="SH.php">Soins & Hygiène</a>
+                    <a href="SC.php">Soins capillaires</a>
+                    <a href="SB.php">Santé & Bien-être</a>
+                    <a href="BM.php">Bébé & Maternité</a>
+                    <a href="MP.php">Matériel médical & Premiers soins</a>
 
                 </div>
             </div>
 
             <!------ -->
-            <a class="lien" href="contact.html">Contact</a>
+            <a class="lien" href="contact.php">Contact</a>
             <button class="btncnx"><a href="connexion.html">Seconnecter</a></button>
             <button class="btninsc"><a href="inscription.html">S'inscrire</a></button>
             <a href="panier.html"> <i class="fa-solid fa-cart-shopping"
                     style="color: #558161; font-size: 30px;"></i><span id="cart-count"
                     style="color: #558161; text-decoration: none;">(0)</span></a>
+                    <a style="color: #558161; font-size: 25px;" href="cnxadmin.html"><i class="fa-solid fa-user"></i></a>
 
         </nav>
     </header>
@@ -57,15 +58,51 @@
         <h1>Votre Panier</h1>
         <section id="cart-items"></section>
         <div id="cart-total">
-            Total : <span id="total-price">0,00 €</span>
+            Total : <span id="total-price">0,00 DA</span>
         </div>
         <div class="actions">
             <button id="clear-cart">Vider le panier</button>
             <button id="checkout">Passer la commande</button>
         </div>
     </main>
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+    fetch('panier.php')
+        .then(res => res.json())
+        .then(data => {
+            const section = document.getElementById('cart-items');
+            let total = 0;
+            section.innerHTML = '';
 
+            data.forEach(item => {
+                total += item.prix * item.quantite;
+
+                section.innerHTML += `
+                    <div class="item">
+                        <h3>${item.nom}</h3>
+                        <p>Quantité : ${item.quantite}</p>
+                        <p>Prix : ${item.prix} €</p>
+                    </div>
+                `;
+            });
+
+            document.getElementById('total-price').textContent = total.toFixed(2) + ' DA';
+        });
+});
+
+// Vider le panier
+document.getElementById('clear-cart').addEventListener('click', () => {
+    fetch('panier.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: 'action=vider'
+    }).then(() => location.reload());
+});
+
+
+</script>
     <script src="script.js"></script>
+    <script src="panier.js"></script>
 </body>
 
 </html>

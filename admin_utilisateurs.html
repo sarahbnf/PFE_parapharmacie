@@ -1,0 +1,93 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Utilisateurs – Admin</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f0f2f5;
+        }
+
+        header {
+            background-color: #355E3B;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            padding: 30px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #558161;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #f9f9f9;
+        }
+
+        a.btn-back {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #355E3B;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        a.btn-back:hover {
+            background-color: #2c4e2f;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Liste des utilisateurs</h1>
+    </header>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nom</th>
+                    <th>Email</th>
+                    <th>Date d'inscription</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                    <tr>
+                        <td colspan="4">Aucun utilisateur trouvé.</td>
+                    </tr>
+                
+            </tbody>
+        </table>
+
+        <a href="admin-tableaudebord.html" class="btn-back">← Retour au tableau de bord</a>
+    </div>
+</body>
+</html>

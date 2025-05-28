@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -31,7 +32,7 @@
         <nav>
             <a class="lien" href="index.html">Accueil</a>
             <div class="dropdown">
-                <a class="lien dropdown-toggle" href="Produits.html">
+                <a class="lien dropdown-toggle" href="produits.html">
                     Produits <i class="fa-solid fa-caret-down"></i>
                 </a>
                 <!--dropdown menu-->
@@ -48,10 +49,11 @@
             <!------ -->
             <a class="lien" href="contact.html">Contact</a>
             <button class="btncnx"><a href="connexion.html">Seconnecter</a></button>
-            <button class="btninsc"><a href="/inscription.html">S'inscrire</a></button>
+            <button class="btninsc"><a href="inscription.html">S'inscrire</a></button>
             <a href="panier.html"> <i class="fa-solid fa-cart-shopping"
                     style="color: #558161; font-size: 30px;"></i><span id="cart-count"
                     style="color: #558161; text-decoration: none;">(0)</span></a>
+                    <a style="color: #558161; font-size: 25px;" href="cnxadmin.html"><i class="fa-solid fa-user"></i></a>
 
         </nav>
     </header>
@@ -63,7 +65,7 @@
         <aside class="categories">
             <h2>Catégories</h2>
             <ul id="category-list">
-                <li><a class="active" href="Produits.html">Tous les produites</a></li>
+                <li><a class="active" href="produits.html">Tous les produites</a></li>
                 <li><a href="SH.html">Soins & Hygiène</a></li>
                 <li><a href="SC.html">Soins capillaires</a></li>
                 <li><a href="SB.html">Santé & Bien-être</a></li>
@@ -74,8 +76,7 @@
 
         <!--les produits-->
 
-
-        <section class="produits">
+  <section class="produits">
             <div class="sort-by">
                 <label for="sort">Trier par :</label>
                 <select id="sort">
@@ -92,13 +93,11 @@
                 <h2>Soins & Hygiène</h2>
                 <div class="grid">
                     <div class="produit" data-id="prod-1">
-                        <div class="produit promo">
-                            <div class="badge">-20%</div>
                             <img src="SH Gel douche.webp" alt="Produit en promotion">
                             <h3>Gel douche surgras pour peaux sensibles - Bioderma Atoderm <br> </h3>
                             <p>2500 DA</p>
                             <button class="add-to-cart">Ajouter au panier</button>
-                        </div>
+                        
                     </div>
 
                     <div class="produit" data-id="prod-2">
@@ -239,14 +238,11 @@
                 <div class="grid">
                     <!--Shampooings-->
                     <div class="produit" data-id="prod-20">
-                        <div class="produit promo">
-
-                            <div class="badge">-20%</div>
+                        
                             <img src="SC extra doux" alt="Produit en promotion">
                             <h3>Shampooing dermo-protecteur - Ducray Extra-Doux <br> <br></h3>
                             <p>3700 DA</p>
                             <button class="add-to-cart">Ajouter au panier</button>
-                        </div>
                     </div>
 
                     <div class="produit" data-id="prod-21">
@@ -382,14 +378,10 @@
                 <div class="grid">
                     <!--Compléments alimentaires-->
                     <div class="produit">
-
-                        <div class="produit promo">
-                            <div class="badge">-20%</div>
                             <img src="SB berocco.avif" alt="Produit en promotion">
                             <h3>multivitamines + magnésium + zinc + vitamine C - Berocca <br><br></h3>
                             <p>4200 DA</p>
                             <button class="add-to-cart">Ajouter au panier</button>
-                        </div>
                     </div>
 
                     <div class="produit">
@@ -480,13 +472,12 @@
                     <!-- Soins & Hygiène du bébé-->
 
                     <div class="produit">
-                        <div class="produit promo">
-                            <div class="badge">-20%</div>
+                    
                             <img src="BM gel moussant.png" alt="Produit en promotion">
                             <h3>Peau normale des bébés et des enfants - Bioderma ABCDerm Gel Moussant</h3>
                             <p>3100 DA</p>
                             <button class="add-to-cart">Ajouter au panier</button>
-                        </div>
+                        
 
                     </div>
                     <div class="produit">
@@ -612,13 +603,12 @@
                 <div class="grid">
 
                     <div class="produit">
-                        <div class="produit promo">
-                            <div class="badge">-20%</div>
+                        
                             <img src="MP Thermomètre sans contact.webp">
                             <h3>Thermomètre sans contact Withings Thermo <br><br></h3>
                             <p>18000 DA</p>
                             <button class="add-to-cart">Ajouter au panier</button>
-                        </div>
+                    
                     </div>
 
                     <div class="produit">
@@ -738,6 +728,7 @@
     </main>
 
 
+
     <!--footer-->
     <footer class="footer">
         <div class="footer-content">
@@ -751,7 +742,7 @@
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="produits.html">Produits</a></li>
-                    <li><a href="#">FAQ</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
@@ -762,9 +753,9 @@
                 <p><i class="fa-solid fa-envelope"></i> contact@essencesante.fr</p>
                 <h2>Liens vers les réseaux sociaux</h2>
                 <div class="socials">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/?locale=fr_FR"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
@@ -870,11 +861,70 @@
                 }, 400);
             });
         });
+
+        function ajouterAuPanier(id, nom, prix, quantite = 1) {
+    const data = new URLSearchParams();
+    data.append('action', 'ajouter');
+    data.append('id', id);
+    data.append('nom', nom);
+    data.append('prix', prix);
+    data.append('quantite', quantite);
+
+    fetch('panier.php', {
+        method: 'POST',
+        body: data,
+    }).then(res => res.json())
+      .then(msg => alert(msg.message));
+}
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const addToCartButtons = document.querySelectorAll('.add-to-cart');
+    const cartCount = document.getElementById('cart-count');
+    let panierTotal = parseInt(cartCount.innerText.replace(/\D/g, '')) || 0;
+
+    addToCartButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            const id = this.dataset.id;
+            const nom = this.dataset.nom;
+            const prix = this.dataset.prix;
+
+            // Animation
+            this.classList.add('pop-effect');
+            setTimeout(() => this.classList.remove('pop-effect'), 300);
+
+            // Envoi AJAX
+            fetch('ajouter_panier.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: `id_produit=${encodeURIComponent(id)}&nom=${encodeURIComponent(nom)}&prix=${encodeURIComponent(prix)}`
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    panierTotal++;
+                    cartCount.innerText = `(${panierTotal})`;
+                } else {
+                    alert("Erreur : " + data.message);
+                }
+            })
+            .catch(error => {
+                alert("Erreur réseau");
+                console.error(error);
+            });
+        });
+    });
+});
+</script>
+
+
     </script>
 
 
     <!--js link-->
     <script src="script.js"></script>
+    <script src="panier.js"></script>
 
 </body>
 

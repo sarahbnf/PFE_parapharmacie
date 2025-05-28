@@ -1,0 +1,53 @@
+.abtparent {
+    width: 800px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 100px;
+  }
+  .titleabt {
+    width: max-content;
+    margin: auto;
+    font-size: 45px;
+    margin-top: 40px;
+    border-bottom: 2px solid #f4e375;
+    color: white;
+  }
+  .parabt {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 32px;
+    color: white;
+  }
+  
+  .imabt {
+    height: 400px;
+    width: 650px;
+    margin-top: 40px;
+    margin-left: 115px;
+  }
+  .readabt {
+    background-color: black;
+    color: #e8d44d;
+    width: 130px;
+    height: 40px;
+    font-size: larger;
+    font-family: "Times New Roman", Times, serif;
+    border-radius: 10px;
+    margin-left: 47%;
+    margin-top: 10px;
+    border-color: transparent;
+    margin-bottom: 50px;
+    text-decoration:underline;
+  }
+  .readabt:hover {
+    width: 125px;
+    height: 38px;
+    border-radius: 54% 46% 73% 27% / 8% 100% 0% 92%;
+    background-color: #e8d44d;
+    color: black;
+    text-decoration: none;
+  }
+  
+  
